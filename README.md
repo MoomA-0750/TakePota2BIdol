@@ -5,5 +5,5 @@
 
 一応不安定かもだけどうちのPCでサーバー立ててるのでよければ。。。
 
-##仮、うちのWebサーバー
-![](ag2o75-server.ddns.net:2434)
+## 仮、うちのWebサーバー
+http://ag2o75-server.ddns.net:2434
