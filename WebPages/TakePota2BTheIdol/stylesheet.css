@@ -7,13 +7,24 @@ body {
 }
 
 
+.At_A_Glance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .At_A_Glance_Contents {
+    position: absolute;
     width: 100vh;
-    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .At_A_Glance_Title {
     z-index: 100;
+    position: relative;
     color: white;
     font-family: ab-kirigirisu, sans-serif;
     font-size: 48px;
@@ -23,6 +34,7 @@ body {
 
 .At_A_Glance_Tiles {
     z-index: 100;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(6, 145px);
     grid-auto-rows: 145px;
@@ -36,6 +48,8 @@ body {
     background: #F7F6F5;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+
+    padding: 0 0 0 12px;
 }
 
 /*タイル・中身ナシ*/
@@ -44,8 +58,29 @@ body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     border-radius: 15px;
+
+    font-family: ab-kirigirisu, sans-serif;
+    font-weight: normal;
+    letter-spacing: -0.1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/*h1のマージン指定*/
+.Tile1_Title h1, .Tile2_Title h1, .Tile3_Title h1, .Tile4_Title h1, .Tile5_Title h1, .Tile6_Title h1, .Tile7_Title h1 {
+    margin: 39px 0 0 0;
+    font-size: 36px;
+}
+
+/*h2のボールド外し*/
+.Tile1_Title h2, .Tile2_Title h2, .Tile3_Title h2, .Tile4_Title h2, .Tile5_Title h2, .Tile6_Title h2, .Tile7_Title h2 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 18px;
+}
 
 .Tile1 {
     z-index: 100;
@@ -112,18 +147,6 @@ body {
     padding: 12.5px;
 }
 
-.Empty_Tiles {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
-    align-items: center; /* 縦方向中央揃え */
-    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
-    justify-content: center; /* 横方向中央揃え */
-    
-    font-family: ab-kirigirisu, sans-serif;
-    letter-spacing: -0.1em;
-}
-
 .At_A_Glance_Background {
     z-index: 0;
     position: relative;
@@ -137,9 +160,14 @@ body {
 
 .Menu_Bar {
     height: max(14.352vh, 155px);
-    margin: 0 36px 0 36px;
+    margin: 0 36px;
     font-family: inherit;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Menu_Bar h1 {
@@ -147,86 +175,19 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 64px;
+    letter-spacing: -0.1em;
     color: #660000;
-    height: 0px;
+    margin: 0;
 }
 
 .Menu_Bar h2 {
     font-family: fot-chiaro-std, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: max(3.889vh, 42px);
+    font-size: 42px;
     color: #660000;
+    margin: 0;
 }
 
 
 /*PlayGround*/
-
-.PlayGround {
-    width: 100vh;
-    margin: 0 auto;
-}
-
-.GridTasting {
-    display: grid;
-    grid-template-columns: repeat(6, 145px);
-    grid-auto-rows: 145px;
-    column-gap: 28px;
-    row-gap: 28px;
-}
-
-.One, .Two, .Three, .Four, .Five, .Six, .Seven {
-    z-index: 101;
-    background: #F7F6F5;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.One {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.Two {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.Three {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-
-.Four {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-
-.Five {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.Six {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-.Seven {
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
