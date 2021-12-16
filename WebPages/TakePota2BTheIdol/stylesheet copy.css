@@ -5,13 +5,9 @@ body {
     font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', Meiryo, "Helvetica Neue", Arial, sans-serif;
 }
 
-/*Hide Scroll-Bar*/
 html::-webkit-scrollbar { 
     width: 0;
 }
-
-
-/*At A Grance*/
 
 .At_A_Glance_Contents {
     position: absolute;
@@ -21,9 +17,6 @@ html::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
-
-    margin-top: calc(100vh - 155px - 875.16px);
 }
 
 .At_A_Glance_Title {
@@ -205,27 +198,26 @@ html::-webkit-scrollbar {
     z-index: 0;
     position: relative;
     width: 100%;
-    height: calc(100vh - 155px);
+    height: min(85.648vh, calc(100vh - 155px));
     background: url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: cover;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
     border-radius: 0 0 30px 30px;
 }
 
-
-/*Menu Bar*/
-
 .Menu_Bar {
-    height: 155px;
+    height: max(14.352vh, 155px);
     margin: 0 36px;
     font-family: inherit;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
-.Menu_Bar h1 {
+.Menu_Bar h1,
+.Members_Title {
     font-family: ab-kirigirisu, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -237,7 +229,6 @@ html::-webkit-scrollbar {
 
 .Menu_Bar_Buttons {
     display: flex;
-    margin-left: auto;
 }
 
 .Button_Members,
@@ -264,9 +255,6 @@ html::-webkit-scrollbar {
     letter-spacing: -0.2em;
     text-align: center;
 }
-
-
-/*Members*/
 
 .Members_Contents {
     position: absolute;
@@ -366,47 +354,5 @@ html::-webkit-scrollbar {
     padding: 0 0 0 12px;
 }
 
-
-/*Media Query*/
-
-/*scale 0.6*/
-@media screen and (max-width: 1357px), screen and (max-height: 1000px) {
-    .At_A_Glance_Contents {
-        z-index: 100;
-        transform-origin: top;
-        transform: scale(0.6);
-        margin-top: calc(100vh - 93px - calc(875.16px * 0.6));
-    }
-
-    .At_A_Glance_Background {
-        height: calc(100vh - 93px);
-        border-radius: 0 0 18px 18px;
-    }
-
-    .Menu_Bar {
-        height: 93px;
-    }
-    
-    .Menu_Bar h1 {
-        font-size: 38.4px;
-    }
-
-    .Button_Members p,
-    .Button_Activities p {
-        font-size: 28.8px;
-    }
-
-    .Button_Members,
-    .Button_Activities {
-        border-radius: 9px;
-        padding: 0 30px;
-        margin: 0 15px;
-        height: 48px;
-    }
-}
-
-/*SmartPhone*/
-@media screen and (orientation: portrait) and (max-width: 540px) {
-}
 
 /*PlayGround*/
