@@ -225,7 +225,8 @@ html::-webkit-scrollbar {
     align-items: center;
 }
 
-.Menu_Bar h1 {
+.Menu_Bar h1,
+.Members_Title {
     font-family: ab-kirigirisu, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -403,6 +404,11 @@ html::-webkit-scrollbar {
         margin: 0 15px;
         height: 48px;
     }
+
+    .Members_Contents {
+        transform-origin: top;
+        transform: scale(0.6);
+    }
 }
 
 /*SmartPhone*/
@@ -410,3 +416,6 @@ html::-webkit-scrollbar {
 }
 
 /*PlayGround*/
+/*background: linear-gradient(to bottom, transparent 0%, transparent 70%, #fff 100%), url(./images/bg.jpg);*/
+
+/**/
