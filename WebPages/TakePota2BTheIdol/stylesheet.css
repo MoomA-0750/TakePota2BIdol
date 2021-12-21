@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('/Mates/Fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('/Mates/Fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
 body {
     width: 100%;
     margin: 0;
@@ -31,14 +44,11 @@ html::-webkit-scrollbar {
     position: relative;
     color: white;
     font-family: ab-kirigirisu, sans-serif;
+    font-weight: normal;
     font-size: 48px;
     letter-spacing: -0.1em;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     margin-bottom: 27px;
-}
-
-.At_A_Glance_Title h1 {
-    text-align: left;
 }
 
 .At_A_Glance_Tiles {
@@ -75,7 +85,6 @@ html::-webkit-scrollbar {
     backdrop-filter: blur(4px);
     border-radius: 15px;
     font-family: ab-kirigirisu, sans-serif;
-    font-weight: normal;
     letter-spacing: -0.1em;
     text-align: center;
     display: flex;
@@ -103,10 +112,12 @@ html::-webkit-scrollbar {
 .Tile2-7_Name h1 {
     margin: 39px 0 0 0;
     font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: -0.2em;
 }
 
 
-/*h2のボールド外し*/
+/*h2のボールド外し(無効化なう)*/
 
 .Tile1_Title h2,
 .Tile2_Title h2,
@@ -292,8 +303,11 @@ html::-webkit-scrollbar {
     row-gap: 28px;
 }
 
+/*夜兎理 九月*/
 .Tile2-1 {
-    background: linear-gradient(to top, rgba(255,255,255,0), #fff 60%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background-size: 110%;
+    background-position: bottom;
     /*Grid指定*/
     grid-column-start: 1;
     grid-column-end: 3;
@@ -301,8 +315,25 @@ html::-webkit-scrollbar {
     grid-row-end: 3;
 }
 
+.Tile2-1 h1 {
+    color:#000;
+}
+
+.Tile2-1 h2 {
+    color:#000;
+}
+
+.Tile2-1 > .Social-Link p {
+    color:rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
+/*あまねむめい*/
 .Tile2-2 {
-    background: linear-gradient(to top, rgba(255,255,255,0), #fff 60%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(11,11,28,0) 30%, #0B0B1C 55%), url("/Mates/Pics/Prof_Pics/MoomA/VRChat_3840x2160_2021-10-19_22-12-50.460 (2).png");
+    background-size: 110%;
+    background-position: bottom;
     /*Grid指定*/
     grid-column-start: 3;
     grid-column-end: 5;
@@ -310,8 +341,25 @@ html::-webkit-scrollbar {
     grid-row-end: 3;
 }
 
+.Tile2-2 h1 {
+    color:#EABCFF;
+}
+
+.Tile2-2 h2 {
+    color:#A988BD;
+}
+
+.Tile2-2 > .Social-Link p {
+    color:rgba(255, 255, 255, .9);
+    background: #5390FF;
+}
+
+
+/*ぽた*/
 .Tile2-3 {
-    background: linear-gradient(to top, rgba(255,255,255,0), #fff 60%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(/Mates/Pics/Prof_Pics/Pota/Screenshots/pota_VRChat_1920x1080_2021-09-16_05-39-37.911.png);
+    background-size: 110%;
+    background-position: bottom;
     /*Grid指定*/
     grid-column-start: 5;
     grid-column-end: 7;
@@ -319,8 +367,26 @@ html::-webkit-scrollbar {
     grid-row-end: 3;
 }
 
+.Tile2-3 h1 {
+    color:#000;
+}
+
+.Tile2-3 h2 {
+    color:#000;
+}
+
+.Tile2-3 > .Social-Link p {
+    color:rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
+/*かいざー*/
 .Tile2-4 {
-    background: linear-gradient(to top, rgba(255,255,255,0), #fff 60%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(253,251,247,0) 30%, #FDFBF7 55%), url(/Mates/Pics/Prof_Pics/Kaiser/Screenshots/aa.png);
+    background-size: 110%;
+    background-position: bottom;
+    
     /*Grid指定*/
     grid-column-start: 1;
     grid-column-end: 3;
@@ -328,8 +394,25 @@ html::-webkit-scrollbar {
     grid-row-end: 5;
 }
 
+.Tile2-4 h1 {
+    color:#C05959;
+}
+
+.Tile2-4 h2 {
+    color:#E19898;
+}
+
+.Tile2-4 > .Social-Link p {
+    color:rgba(255, 255, 255, 0.9);
+    background: #E4AC1B;
+}
+
+
+/*みとてゃん*/
 .Tile2-5 {
-    background: linear-gradient(to top, rgba(255,255,255,0), #fff 60%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background-size: 110%;
+    background-position: bottom;
     /*Grid指定*/
     grid-column-start: 3;
     grid-column-end: 5;
@@ -337,8 +420,25 @@ html::-webkit-scrollbar {
     grid-row-end: 5;
 }
 
+.Tile2-5 h1 {
+    color:#000;
+}
+
+.Tile2-5 h2 {
+    color:#000;
+}
+
+.Tile2-5 > .Social-Link p {
+    color:rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
+/*むむがみ*/
 .Tile2-6 {
-    background: linear-gradient(to top, rgba(255,255,255,0), #fff 60%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background-size: 110%;
+    background-position: bottom;
     /*Grid指定*/
     grid-column-start: 5;
     grid-column-end: 7;
@@ -346,14 +446,46 @@ html::-webkit-scrollbar {
     grid-row-end: 5;
 }
 
+.Tile2-6 h1 {
+    color:#000;
+}
+
+.Tile2-6 h2 {
+    color:#000;
+}
+
+.Tile2-6 > .Social-Link p {
+    color:rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
+/*キリエ=エレイソン*/
 .Tile2-7 {
-    background: linear-gradient(to top, rgba(255,255,255,0), #fff 60%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(246,249,253,0) 30%, #F6F9FD 55%), url(/Mates/Pics/Prof_Pics/Kyrie/Screenshots/VRChat_1920x1080_2021-08-30_00-29-56.374.png);
+    background-size: 110%;
+    background-position: bottom;
     /*Grid指定*/
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 7;
 }
+
+.Tile2-7 h1 {
+    color:#FE67A5;
+    letter-spacing: -0.1em;
+}
+
+.Tile2-7 h2 {
+    color:#FFB4D3;
+}
+
+.Tile2-7 > .Social-Link p {
+    color:rgba(255, 255, 255, 0.9);
+    background: #A19FB2;
+}
+
 
 .Tile2-1,
 .Tile2-2,
@@ -365,6 +497,27 @@ html::-webkit-scrollbar {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     padding: 0 0 0 12px;
+}
+
+.Social-Link {
+    display: flex;
+}
+
+.Social-Link p {
+    font-size: 18px;
+    text-align: left;
+    font-family: ab-kirigirisu, sans-serif;
+    letter-spacing: -0.2em;
+
+
+    background: rgb(255, 161, 66);
+    border-radius: 15px;
+    padding: 4.5px 15px 4.5px 10px;
+    margin: 10px 10px 0 0;
+}
+
+.Social-Link > a {
+    text-decoration: none;
 }
 
 
