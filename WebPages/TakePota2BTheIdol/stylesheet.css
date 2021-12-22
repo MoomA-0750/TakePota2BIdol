@@ -1,14 +1,4 @@
-@font-face {
-    font-family: 'IBM_Plex_Sans';
-    src: url(/Mates/Fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf) format('truetype');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'IBM_Plex_Sans';
-    src: url(/Mates/Fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf) format('truetype');
-    font-weight: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 
 
 body {
@@ -25,16 +15,16 @@ html::-webkit-scrollbar {
 
 
 /*At A Grance*/
+.At_A_Glance {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 
 .At_A_Glance_Contents {
     position: absolute;
-    width: 100vw;
+    max-width: 1010px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
 
     margin-top: calc(100vh - 155px - 875.16px);
 }
@@ -59,6 +49,10 @@ html::-webkit-scrollbar {
     grid-auto-rows: 145px;
     column-gap: 28px;
     row-gap: 28px;
+}
+
+.At_A_Glance_Arrow-Up {
+    padding: 0 471px;
 }
 
 
@@ -112,9 +106,9 @@ html::-webkit-scrollbar {
 .Tile2-7_Name h1 {
     margin: 39px 0 0 0;
     font-size: 36px;
-    font-family: ab-kirigirisu, sans-serif;
+    /*font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bold;
-    letter-spacing: -0.2em;
+    letter-spacing: -0.2em;*/
 }
 
 
@@ -281,14 +275,16 @@ html::-webkit-scrollbar {
 
 /*Members*/
 
+.Members {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
 .Members_Contents {
     position: absolute;
-    width: 100vw;
+    max-width: 1010px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .Members_Title {
